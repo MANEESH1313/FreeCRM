@@ -1,0 +1,16 @@
+<suite name="Free CRM Automation Framework" >
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+		<listener class-name="com.qa.analyzer.RetryTransformer" />
+	</listeners>
+	
+
+  <test name="Free CRM Test Cases" >
+    <classes>
+      <class name="com.crm.qa.testcases.LoginPageTest"/>
+      <class name="com.crm.qa.testcases.HomePageTest"/>
+      <class name="com.crm.qa.testcases.ContactsPageTest"/>
+    </classes>
+  </test>
+</suite>
